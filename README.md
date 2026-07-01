@@ -1,4 +1,4 @@
-# LOHTML & LOElement Documentation
+# LOHTML Documentation
 
 Fluent PHP classes for programmatically building and manipulating HTML documents and elements with a chainable, object-oriented API.
 
@@ -62,7 +62,7 @@ $site->responsive(true);             // Enable mobile-friendly viewport
 
 ### **3. Build the Body**
 
-Use `**$site->body**` to add content to the `<body>` of your website. You can **chain methods** to create nested elements.
+Use `$site->body` to add content to the `<body>` of your website. You can **chain methods** to create nested elements.
 
 #### **Basic Example**
 
@@ -74,7 +74,7 @@ $site->body->link('https://example.com')->content('Visit Example.com');
 
 #### **Adding Classes and IDs**
 
-Use `**.` for classes** and `**#` for IDs** when adding elements.
+Use `.` for classes and `#` for IDs when adding elements.
 
 ```php
 $container = $site->body->div('.container #main');
@@ -126,9 +126,9 @@ echo $site->html();
 
 ---
 
-## **Working with `$site->head**`
+## **Working with `$site->head`**
 
-You can also **directly manipulate the `<head>**` section of your document.
+You can also **directly manipulate the `<head>`** section of your document.
 
 ```php
 $site->head->meta('keywords', 'PHP, HTML, LOHTML');
@@ -288,7 +288,7 @@ $site->body->ul()
 
 ### **3. Shorthand for IDs and Classes**
 
-Use `**.` for classes** and `**#` for IDs** when adding elements:
+Use `.` for classes and `#` for IDs when adding elements:
 
 ```php
 $site->body->div('.container #main');
@@ -370,7 +370,7 @@ echo $site->html();
 ## **Summary**
 
 - **LOHTML** is for **building entire HTML documents** (title, meta, styles, scripts, etc.).
-- `**$site->body**` and `**$site->head**` are **LOElement** objects for adding content.
+- `$site->body` and `$site->head` are **LOElement** objects for adding content.
 - Use **chainable methods** to create nested structures easily.
 - **Shorthand syntax** (`.class`, `#id`) makes adding elements quick and intuitive.
 - **LOElement** can also be used **standalone** for custom HTML fragments.
